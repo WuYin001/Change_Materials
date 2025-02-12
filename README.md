@@ -1,5 +1,3 @@
-Change Material
-
 Allow user to batch replace materials accurately
 
 Clean Material Names:
