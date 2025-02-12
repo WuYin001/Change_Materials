@@ -2,5 +2,6 @@ Change Material
 
 Allow user to batch replace materials accurately
 
-https://github.com/user-attachments/assets/e56e752d-da94-4cbb-92d5-bb6634d2a523
+https://github.com/user-attachments/assets/71a3a450-11ed-4c0c-8d6d-594add45c871
+
 
