@@ -17,34 +17,33 @@ class MaterialMappingItem(bpy.types.PropertyGroup):
     new_material: bpy.props.StringProperty(name="New Material")
 
     def draw_old_material_icon(self, layout, context):
-        """繪製材質的預覽圖示"""
+        """Draws the preview icon of the material"""
         if self.old_material:
             material = bpy.data.materials.get(self.old_material)
             if material:
-                # 顯示材質的預覽圖示
+                # Display the preview icon of the material
                 layout.label(text="", icon_value=layout.icon(material))
             else:
-                # 如果材質不存在，顯示預設圖示
+                # Display the default icon if the material does not exist
                 layout.label(text="", icon='MATERIAL')
         else:
-            # 如果沒有材質，顯示預設圖示
+            # Display the default icon if no material is assigned
             layout.label(text="", icon='MATERIAL')
 
     def draw_new_material_icon(self, layout, context):
-        """繪製材質的預覽圖示"""
+        """Draws the preview icon of the material"""
         if self.new_material:
             material = bpy.data.materials.get(self.new_material)
             if material:
-                # 顯示材質的預覽圖示
+                # Display the preview icon of the material
                 layout.label(text="", icon_value=layout.icon(material))
             else:
-                # 如果材質不存在，顯示預設圖示
+                # Display the default icon if the material does not exist
                 layout.label(text="", icon='MATERIAL')
         else:
-            # 如果沒有材質，顯示預設圖示
+            # Display the default icon if no material is assigned
             layout.label(text="", icon='MATERIAL')
             
-
 # Add default MaterialMappingItem
 def add_default_material_mappings(scene):
     if not hasattr(scene, "material_mapping"):
